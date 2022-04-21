@@ -19,6 +19,8 @@ sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
     
+sudo yum -y install slirp4netns fuse-overlayfs container-selinux
+    
 sudo yum install docker-ce docker-ce-cli containerd.io
 
 echo "Starting and enabling Docker"
